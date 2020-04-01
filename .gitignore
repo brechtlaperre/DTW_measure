@@ -1,3 +1,10 @@
+# Prevent images and datafiles from being added
+*.h5
+*.png
+*.eps
+*.csv
+*.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
