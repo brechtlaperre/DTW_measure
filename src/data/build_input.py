@@ -105,7 +105,7 @@ def format_to_lstm_input(input_, output_, time_back, time_forward):
 
     return X[:ind], y[:ind], lookup[:ind]
 
-def get_storm_dates(stormname='data/external/semi_auto_storms_8114.csv'):
+def get_storm_dates(stormname='data/external/storms_1981_2016.csv'):
     return pd.read_csv(stormname, index_col=0, dtype={'date1': str, 'date2': str},
                        parse_dates=['date1', 'date2'])
 
@@ -128,7 +128,7 @@ def get_storms(data, storm_dates):
     print('Number of storms in dataset: {}'.format(len(valid_storms)))
     return pd.concat(rs), np.array(valid_storms)
 
-def store_data_sets(train_in, train_out, valid_in, valid_out, test_in, test_out, lookup, test_storm_dates, fname='data/processed/datasets.h5'):
+def store_data_sets(train_in, train_out, valid_in, valid_out, test_in, test_out, lookup, test_storm_dates, fname='data/processed/dataset.h5'):
     with h5py.File(fname, 'w') as f:
         train = f.create_group('train_sets')
         train.create_dataset('train_in', data=train_in)
