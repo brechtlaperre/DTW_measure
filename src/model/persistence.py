@@ -115,9 +115,15 @@ def persistence_experiment():
 
     pers_res, bincounts = persistence_eval(test[[output]], time_forward)
 
+    new_ind = dict(list(enumerate(['t+{}'.format(i+1) for i in range(6)])))
+    pers_res = pd.DataFrame.from_dict(pers_res).rename(index=new_ind)
+
     return pers_res, bincounts
+
+
 
 if __name__ == '__main__':
     pers_res, bincounts = persistence_experiment()
 
     print(pers_res)
+    print(bincounts)
