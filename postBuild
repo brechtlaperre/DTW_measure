@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wget https://osf.io/cm8gb/download -O data/raw/features.csv
+wget https://osf.io/cqbax/download -O data/external/storms_1981_2016.csv
