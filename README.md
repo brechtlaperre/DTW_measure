@@ -5,6 +5,6 @@ __Contact:__ brecht.laperre@kuleuven.be
 
 ----
  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brechtlaperre/DTW_measure/master?filepath=notebooks)  
-__Status:__ Currently in peer review on [Frontiers](https://www.Frontiersin.org)
+__Status:__ Accepted for publication on [Frontiers](https://www.Frontiersin.org)
 
 All datafiles can be found on [OSF](https://osf.io/nrh7m/), or recreated yourself by following the instructions in the `notebooks` folder.
